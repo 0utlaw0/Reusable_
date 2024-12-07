@@ -7,8 +7,11 @@ contains `phone`.
 `findPhoneByName(name: string): string`. Returning phone from hash/object.
 Use `hash[key]` to find needed phone. */
 
-const phonebook = null;
+const phonebook = {
+  'Marcus Aurelius': '+380445554433',
+  'Loban Mikhailo': '+380932453321'
+};
 
-const findPhoneByName = null;
+const findPhoneByName = (name) =>  phonebook[name];
 
 module.exports = { phonebook, findPhoneByName };
